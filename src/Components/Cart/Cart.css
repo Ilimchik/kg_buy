@@ -1,0 +1,16 @@
+.content_card {
+    margin-top: 30px;
+	max-width: 300px;
+	border-radius: 8px 8px 0px 0px;
+	/* border-radius: 8px; */
+	background: #464646c4;
+	border: 1px solid #ffffff;
+	overflow: hidden;
+    cursor: pointer;
+}
+.content_desc{
+    margin-left: 10px;
+}
+.com_tit{
+    color: #ffffff;
+}
