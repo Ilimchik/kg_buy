@@ -3,7 +3,6 @@ import Logo from "../Logo/Logo";
 import CartLink from "../CartLink/CartLink";
 import Auth from "../Auth/Auth";
 import Menu from "../Menu/Menu";
-import { Link, useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 
 // const { data, isLoading } = useGetProductsQuery({ title: searchValue });
