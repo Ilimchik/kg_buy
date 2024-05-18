@@ -1,4 +1,4 @@
-import './Cart.css';
+import './Card.css';
 import image from "../../img/about.jpg"
 
 function Cart() {

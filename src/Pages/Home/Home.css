@@ -1,0 +1,9 @@
+.HomeTit{
+    margin-bottom: 5vh;
+}
+.HomeContent{
+    justify-content: flex-start;
+}
+.HomeAside{
+    margin-right: 10vh;
+}

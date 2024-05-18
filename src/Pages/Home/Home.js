@@ -1,12 +1,20 @@
 import './Home.css';
-import Cart from '../../Components/Cart/Cart';
+import Card from '../../Components/Card/Card';
+import Title from '../../Components/Title/Title';
+import CategoryList from "../../Components/CategoryList/CategoryList";
 
 
 
 function Home() {
   return (
     <>
-      <Cart/>
+      <Title><p className='HomeTit'>Products</p></Title>
+      <div className="HomeContent flex">
+        <aside className='HomeAside'>
+          <CategoryList />
+        </aside>
+        <Card />
+      </div>
     </>
   );
 }
