@@ -1,0 +1,13 @@
+.DelCard{
+    width: 30%;
+    border-radius: 1px solid;
+    border: white;
+}
+.Delivery{
+    align-items: center;
+}
+.DelImg{
+    width: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+}

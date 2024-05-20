@@ -1,5 +1,5 @@
 import "./Logo.css";
-import logo from '../../img/logo.svg';
+import logo from '../../img/logo2-removebg-preview.png';
 import { NavLink } from "react-router-dom";
 
 export default function Logo() {
