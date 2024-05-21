@@ -2,7 +2,7 @@
   white-space: nowrap;
 }
 .Auth .blueBtn {
-  background-color: #021437;
+  background-color: #343434;
   border: 0;
   padding: 5px 10px;
   color: white;
@@ -14,7 +14,7 @@
   margin-top: 10px;
 }
 .Auth .blueBtn:hover {
-  background-color: #2956b1;
+  background-color: #000000;
 }
 .Auth .icon {
   background-color: transparent;

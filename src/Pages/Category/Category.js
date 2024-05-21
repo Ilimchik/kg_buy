@@ -3,6 +3,7 @@ import NotFound from "../NotFound/NotFound";
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import ProductList from "../../Components/ProductList/ProductList";
+import CategoryList from "../../Components/CategoryList/CategoryList";
 
 
 export default function Category() {
@@ -19,7 +20,10 @@ export default function Category() {
   }
 
   return (
-    <div className="Category">
+    <div className="Category flex">
+      <aside>
+        <CategoryList />
+      </aside>
       <h2>{category.name}</h2>
       <ProductList category={category} />
     </div>

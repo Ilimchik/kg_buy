@@ -1,24 +1,31 @@
-header{
+header {
   padding: 15px 0;
+  /* position: fixed;
+  top: 0;
+  z-index: 100000;
+  width: 100%;  
+  background-color: white; */
 }
-.Head{
-  align-items: center;
-  position: relative;
+
+.Head {
   padding-right: 35px;
 }
+
 .Buttons {
   margin-left: 10px;
 }
-.Cart_ic{
+
+.Cart_ic {
   width: 24px;
   height: 24px;
   display: block;
-  background: url(../../img/cart_ic.png) center no-repeat;
+  background: url(../../img/cart-ic.png) center no-repeat;
   background-size: cover;
   position: relative;
   margin-left: 20px;
 }
-.Cart_ic span{
+
+.Cart_ic span {
   position: absolute;
   line-height: 15px;
   width: 15px;
