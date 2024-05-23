@@ -18,8 +18,11 @@
   outline: none;
   padding: 0;
 }
+
 .Search .NoResults {
   position: absolute;
+  transform: translateY(-18px);
+  color: white;
 }
 .Search .SearchResults {
   position: absolute;

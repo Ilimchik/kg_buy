@@ -6,9 +6,9 @@ function Home() {
 
   return (
     <>
-      <Title><p className='HomeTit'>Products</p></Title>
       <div className="HomeContent flex">
           <CategoryList />
+          <Title><p className='HomeTit'>Products</p></Title>
       </div>
     </>
   );

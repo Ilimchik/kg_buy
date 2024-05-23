@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: row-reverse;
   border: 2px solid #000;
-  background-color: #222;
+  background-color: #000000;
   color: white;
   width: 400px;
 }
@@ -24,7 +24,7 @@
 .ProductItem:nth-child(1) .Product {
   margin: 0;
   position: absolute;
-  background-color: #222;
+  background-color: #000000;
 }
 
 .ProductItem:nth-child(2) .Product {
