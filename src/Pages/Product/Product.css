@@ -1,0 +1,18 @@
+.productTit {
+    margin: 20px 0;
+}
+
+.productImg img {
+    width: 300px;
+}
+
+.ProductDescriptoin {
+    max-width: 600px;
+}
+
+.ProductPrice {
+    margin-bottom: 10px;
+}
+.ProductDescriptoin{
+    margin-bottom: 10px;
+}
