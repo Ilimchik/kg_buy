@@ -1,3 +1,4 @@
+import "./Category.css"
 import { useMatch } from "react-router-dom";
 import NotFound from "../NotFound/NotFound";
 import { useContext } from "react";
@@ -20,11 +21,9 @@ export default function Category() {
   }
 
   return (
-    <div className="Category flex">
-      <aside>
+    <div className="Category">
         <CategoryList />
-      </aside>
-      <h2>{category.name}</h2>
+      <h2 className="categoryName">{category.name}</h2>
       <ProductList category={category} />
     </div>
   )

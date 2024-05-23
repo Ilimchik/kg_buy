@@ -4,16 +4,21 @@
     margin-top: 30px;
     border-radius: 10px;
     border: solid white;
+    max-height: 30vh;
 }
 
 .dropdownBtn {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .CategoryList a {
     display: block;
     padding: 3px 10px;
     transition: 0.3s;
+}
+.CategoryList ul {
+    display: flex;
+    justify-content: space-around;
 }
 
 .CategoryList a:hover {
