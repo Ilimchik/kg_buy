@@ -6,12 +6,13 @@
   max-height: 30px;
   white-space: nowrap;
   box-sizing: border-box;
+  margin-top: 10px;
 }
 .Search input {
-  background: none;
+  background: #3b3b3b;
   border: 0;
   border-radius: 15px;
-  color: #222;
+  color: #ffffff;
   height: 30px;
   text-align: center;
   outline: none;
@@ -30,7 +31,7 @@
   margin: 8px;
 }
 .Search input::placeholder {
-  color: #222;
+  color: #cacaca;
 }
 
 @media (max-width: 640px) {

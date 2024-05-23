@@ -1,3 +1,6 @@
+.Menu{
+  margin-top: 10px;
+}
 .Menu li{
   text-transform: uppercase;
   padding: 3px 10px;

@@ -1,5 +1,6 @@
 .Logo .logo {
   max-width: 100px;
+  margin-top: 10px;
 }
 @media (max-width: 720px) {
   .Logo .logo {
