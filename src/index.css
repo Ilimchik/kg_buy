@@ -64,6 +64,7 @@ body{
 	color: #242424;
 	width: 100%;
 	font-family: 'Open Sans', arial, sans-serif;
+	margin-top: 80px;
 }
 .container{
 	max-width: 1325px;
