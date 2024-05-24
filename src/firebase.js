@@ -27,6 +27,8 @@ export const storage = getStorage(app);
 export const categoryCollection = collection(db, "categories");
 export const productsCollection = collection(db, "products");
 export const ordersCollection = collection(db, "orders");
+export const bestSellers = collection(db, "sellers");
+
 
 const provider = new GoogleAuthProvider();
 export const LogIn = () => signInWithPopup(auth, provider);
