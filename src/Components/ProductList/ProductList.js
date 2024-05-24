@@ -8,6 +8,7 @@ import DeleteProduct from "../DeleteProduct/DeleteProduct";
 
 export default function ProductList({ category }) {
   const { products } = useContext(AppContext);
+  console.log(products)
   const output = products.filter(product => product.category === category.id)
     .map(product => (
       <div key={product.id} className="product">

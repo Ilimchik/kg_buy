@@ -1,7 +1,6 @@
 import './Home.css';
-import Title from '../../Components/Title/Title';
 import CategoryList from "../../Components/CategoryList/CategoryList";
-import AllProducts from '../../Components/AllProducts/AllProducts';
+import BestSellers from "../../Components/BestSellers/BestSellers";
 
 function Home() {
 
@@ -9,8 +8,7 @@ function Home() {
     <>
       <div className="HomeContent flex">
           <CategoryList />
-          <Title><p className='HomeTit'>Products</p></Title>
-          <AllProducts/>
+          <BestSellers />
       </div>
     </>
   );
