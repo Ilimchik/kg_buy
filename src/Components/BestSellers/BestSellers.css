@@ -1,3 +1,8 @@
-.ProductList{
+.ProductList .product {
+    display: flex;
     flex-direction: column;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    margin: 15px 0px;
+    padding: 5px;
 }

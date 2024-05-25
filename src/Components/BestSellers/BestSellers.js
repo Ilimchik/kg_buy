@@ -6,6 +6,12 @@ import { AddToCart } from "../AddToCart/AddToCart";
 import AddProduct from "../AddProduct/AddProduct";
 import DeleteProduct from "../DeleteProduct/DeleteProduct";
 import Title from "../Title/Title";
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+// import 'swiper/css/scrollbar';
 
 export default function AllProducts({ sellers }) {
 
@@ -34,13 +40,15 @@ export default function AllProducts({ sellers }) {
         );
 
     return (
-        <div className="ProductList">
-            <Title>Best Sellers</Title>
-            <div className="Products">
-                {output}
-                <AddProduct sellers={sellers} />
+        <>
+            <div className="BestSellerContent flex">
+                <Title>Best Sellers</Title>
+                <div className="ProductList">
+                    <AddProduct sellers={sellers} />
+                    {output}
+                </div>
             </div>
-        </div>
+        </>
     )
 
 
