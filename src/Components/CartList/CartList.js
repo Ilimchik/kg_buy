@@ -2,6 +2,7 @@ import "./CartList.css";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
+import removeIc from "../../img/remove.png"
 
 export default function CartList() {
   const { products, cart, setCart } = useContext(AppContext);
@@ -45,7 +46,7 @@ export default function CartList() {
             min={1}
             onChange={(event) => onQuantityChange(product, +event.target.value)} />
           <span>${(cart[product.id] * product.price).toFixed(2)}</span>
-          <i className="fa-solid fa-xmark" onClick={() => onItemRemove(product)} />
+          <img src={removeIc} className="fa-solid fa-xmark" onClick={() => onItemRemove(product)}/>
         </div>
       </div>
     ));
