@@ -1,16 +1,31 @@
+import React, { useContext } from 'react';
 import "./CartList.css";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import removeImg from "../../img/remove.png"
 
 export default function CartList() {
   const { products, cart, setCart } = useContext(AppContext);
 
   function onQuantityChange(product, qty) {
-    setCart({
-      ...cart,
-      [product.id]: qty
-    })
+    if (qty > 0) {
+      setCart({
+        ...cart,
+        [product.id]: qty
+      });
+    }
+  }
+
+  function incrementQuantity(product) {
+    const newQuantity = (cart[product.id] || 0) + 1;
+    onQuantityChange(product, newQuantity);
+  }
+
+  function decrementQuantity(product) {
+    const newQuantity = (cart[product.id] || 0) - 1;
+    if (newQuantity > 0) {
+      onQuantityChange(product, newQuantity);
+    }
   }
 
   function onItemRemove(product) {
@@ -21,11 +36,13 @@ export default function CartList() {
 
   const productIds = Object.keys(cart);
 
-  const pricesInCart = products
-    .filter((product) => productIds.includes(product.id))
-    .map((product) => cart[product.name] * product.price);
-  const total = pricesInCart.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-
+  const total = productIds.reduce((acc, productId) => {
+    const product = products.find(p => p.id === productId);
+    if (product) {
+      return acc + (product.price * cart[productId]);
+    }
+    return acc;
+  }, 0);
 
   const output = products
     .filter((product) => productIds.includes(product.id))
@@ -34,26 +51,29 @@ export default function CartList() {
         <Link to={"/products/" + product.slug}>
           <img src={product.picture} alt={product.name} />
         </Link>
-        <Link to={"/products/" + product.slug}>{product.name}</Link>
-
-        <div className="inputs">
-          <input
-            className="productNumber"
-            type="number"
-            placeholder="1"
-            value={cart[product.name]}
-            min={1}
-            onChange={(event) => onQuantityChange(product, +event.target.value)} />
-          <span>${(cart[product.id] * product.price).toFixed(2)}</span>
-          <i className="fa-solid fa-xmark" onClick={() => onItemRemove(product)}/>
+        <div className="itemDetails flex">
+          <Link to={"/products/" + product.slug}>{product.name}</Link>
+          <span>${product.price}</span>
+          <div className="inputs">
+            <button className="quantityButton" onClick={() => decrementQuantity(product)}>-</button>
+            <input
+              type="number"
+              value={cart[product.id]}
+              min={1}
+              onChange={(event) => onQuantityChange(product, +event.target.value)} />
+            <button className="quantityButton" onClick={() => incrementQuantity(product)}>+</button>
+            <button className="removeButton" onClick={() => onItemRemove(product)}>
+              <img src={removeImg} alt="" />
+            </button>
+          </div>
         </div>
       </div>
     ));
 
   return (
-    <div className="CartList">
-      {output}
-      <div className="total">Total: ${total.toFixed(2)}</div>
+    <div className="CartList flex">
+      {output.length > 0 ? output : <p className="emptyCartMessage">Your cart is empty.</p>}
+      <p className='total'>Total: ${total.toFixed(2)}</p>
     </div>
-  )
+  );
 }
