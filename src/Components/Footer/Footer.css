@@ -1,11 +1,12 @@
 footer {
-  border-bottom: #000;
   border: 1px solid;
   padding: 25px 0;
+  background: #000;
 }
 
 .Foot_tit {
-  font-size: 16px;
+  color: white;
+  font-size: 18px;
   font-weight: 500;
   padding-bottom: 15px;
 }

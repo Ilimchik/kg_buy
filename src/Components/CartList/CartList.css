@@ -33,7 +33,7 @@
   justify-content: space-between;
 }
 .fa-solid{
-  background: #000;
+  background: url(../../img/remove-button.svg);
   width: 20px;
   height: 20px;
 }

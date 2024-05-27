@@ -16,6 +16,7 @@
   border-radius: 5px;
   margin: 15px 0px;
   padding: 5px;
+  overflow: hidden;
 }
 
 .ProductList .product img {
