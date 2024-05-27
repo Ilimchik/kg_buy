@@ -46,7 +46,7 @@ export default function CartList() {
             min={1}
             onChange={(event) => onQuantityChange(product, +event.target.value)} />
           <span>${(cart[product.id] * product.price).toFixed(2)}</span>
-          <img src={removeIc} className="fa-solid fa-xmark" onClick={() => onItemRemove(product)}/>
+          <i src={removeIc} className="fa-solid fa-xmark" onClick={() => onItemRemove(product)}/>
         </div>
       </div>
     ));
