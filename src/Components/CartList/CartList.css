@@ -15,7 +15,7 @@
   transition: all 100ms linear;
 }
 .cartItem input {
-  width: 30px;
+  width: 40px;
 }
 .cartItem a {
   color: black;
@@ -36,6 +36,11 @@
   background: #000;
   width: 20px;
   height: 20px;
+}
+.productNumber{
+  border-radius: 4px;
+  border: solid ;
+  width: 10px;
 }
 
 @media (max-width: 880px) {

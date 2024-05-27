@@ -21,6 +21,12 @@ export default function CartList() {
 
   const productIds = Object.keys(cart);
 
+  const pricesInCart = products
+    .filter((product) => productIds.includes(product.id))
+    .map((product) => cart[product.name] * product.price);
+  const total = pricesInCart.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+
   const output = products
     .filter((product) => productIds.includes(product.id))
     .map((product) => (
@@ -31,20 +37,23 @@ export default function CartList() {
         <Link to={"/products/" + product.slug}>{product.name}</Link>
 
         <div className="inputs">
-        <input
-          type="number"
-          value={cart[product.name]}
-          min={1}
-          onChange={(event) => onQuantityChange(product, +event.target.value)} />
-        <span>${(cart[product.id] * product.price).toFixed(2)}</span>
-        <i className="fa-solid fa-xmark" onClick={() => onItemRemove(product)} />
-          </div>
+          <input
+            className="productNumber"
+            type="number"
+            placeholder="1"
+            value={cart[product.name]}
+            min={1}
+            onChange={(event) => onQuantityChange(product, +event.target.value)} />
+          <span>${(cart[product.id] * product.price).toFixed(2)}</span>
+          <i className="fa-solid fa-xmark" onClick={() => onItemRemove(product)} />
+        </div>
       </div>
     ));
 
   return (
     <div className="CartList">
       {output}
+      <div className="total">Total: ${total.toFixed(2)}</div>
     </div>
   )
 }
