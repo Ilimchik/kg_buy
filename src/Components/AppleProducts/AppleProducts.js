@@ -1,4 +1,4 @@
-import "./BestSellers.css"
+import "./AppleProducts.css"
 import { useContext } from "react";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ import Title from "../Title/Title";
 export default function AllProducts({ sellers }) {
 
     const { products } = useContext(AppContext);
-    const output = products.filter(product => product.name && product.bestseller === true)
+    const output = products.filter(product => product.name && product.appleProducts === true)
         .map(product => (
             <div key={product.id} className="product">
                 <Link to={"/products/" + product.slug}>
@@ -37,7 +37,7 @@ export default function AllProducts({ sellers }) {
     return (
         <>
             <div className="BestSellerContent flex">
-                <Title>Best Sellers</Title>
+                <Title>Apple Products</Title>
                 <div className="ProductList">
                     <AddProduct sellers={sellers} />
                     {output}
