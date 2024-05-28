@@ -1,30 +1,42 @@
-.Menu{
+.Menu {
   margin-top: 10px;
 }
-.Menu ul{
+
+.Menu ul {
   color: white;
 }
-.Menu li{
+
+.Menu li {
   text-transform: uppercase;
   padding: 3px 10px;
   font-weight: 600;
   transition: 0.3s;
   border-bottom: 2px solid transparent;
 }
-.Menu li:hover{
+
+.Menu li:hover {
   border-color: #dbdbdb;
 }
-.Foot_menu{
+
+.Foot_menu {
   width: calc(100% - 330px);
 }
-footer .Menu ul{
+
+footer .Menu ul {
   flex-direction: column;
   font-size: 12px;
   padding-bottom: 20px;
   display: inline-block;
 }
-footer .Menu li{
+
+footer .Menu li {
   margin-bottom: 8px;
   padding: 3px 0 1px;
   text-transform: none;
+}
+
+@media screen and (max-width: 540px) {
+  .Menu {
+    margin: 15px auto;
+  }
 }

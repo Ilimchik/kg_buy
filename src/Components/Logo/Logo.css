@@ -2,8 +2,21 @@
   max-width: 50px;
   margin-top: 10px;
 }
+
 @media (max-width: 720px) {
   .Logo .logo {
     width: 80px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .Logo {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Logo {
+    margin: auto;
   }
 }

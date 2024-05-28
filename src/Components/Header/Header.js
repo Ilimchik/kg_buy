@@ -16,19 +16,19 @@ export default function HeaderSection() {
 
 
   return (
-    <header className="Header">
-      <div className="container">
-        <div className="Head flex">
-          <Logo />
-          <Menu />
-          <Search/>
-          <div className="buttons flex">
-            <Auth />
-            <CartLink />
+      <header className="Header">
+        <div className="container">
+          <div className="Head flex">
+            <Logo />
+            <Menu />
+            <Search />
+            <div className="buttons flex">
+              <Auth />
+              <CartLink />
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
   )
 
 }
