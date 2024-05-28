@@ -72,7 +72,7 @@ export default function CartList() {
 
   return (
     <div className="CartList flex">
-      {output.length > 0 ? output : <p className="emptyCartMessage">Your cart is empty.</p>}
+      {output}
       <p className='total'>Total: ${total.toFixed(2)}</p>
     </div>
   );
