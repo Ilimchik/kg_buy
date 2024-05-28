@@ -73,6 +73,11 @@ input[type="number"] {
   border-radius: 5px;
 }
 
+.total {
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 880px) {
   .CartList .cartItem {
     font-size: 23px;

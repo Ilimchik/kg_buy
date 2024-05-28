@@ -1,3 +1,4 @@
+import './Cart.css'
 import { useContext, useState } from "react";
 import CartList from "../../Components/CartList/CartList";
 import OrderForm from "../../Components/OrderForm/OrderForm";

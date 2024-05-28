@@ -1,0 +1,11 @@
+.order{
+    width: auto;
+    border: solid rgb(148, 148, 148);
+    border-radius: 5px;
+    margin-left: auto;
+    padding: 5px;
+    transition: 0.3s;
+}
+.order:hover{
+    scale: 1.1;
+}
