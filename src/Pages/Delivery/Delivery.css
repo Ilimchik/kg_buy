@@ -6,14 +6,13 @@
     width: 350px;
     border-radius: 1px;
     border: solid rgb(146, 146, 146);
-}
-
-.DelCard:hover {
-    box-shadow: 15px;
+    overflow: hidden;
+    height: 450px;
+    cursor: pointer;
 }
 
 .DelImg {
-    width: 300px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
