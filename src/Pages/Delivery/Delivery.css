@@ -1,16 +1,22 @@
-
-.Delivery{
+.Delivery {
     align-items: center;
 }
-.DelCard{
+
+.DelCard {
     width: 350px;
-    border-radius: 3px ;
-    border: solid rgb(0, 0, 0);
+    border-radius: 1px;
+    border: solid rgb(146, 146, 146);
 }
-.DelImg{
-    width: 300px;   
+
+.DelCard:hover {
+    box-shadow: 15px;
+}
+
+.DelImg {
+    width: 300px;
     margin-bottom: 10px;
 }
-.DelTxt{
-    padding: 5px;
+
+.DelTxt {
+    padding: 15px;
 }

@@ -10,10 +10,30 @@ function Footer() {
     <footer>
       <div className="container">
         <div className="Foot flex">
-          <div className="Foot_menu">
-            <p className="Foot_tit">Menu</p>
+          <div className="Foot_menu flex">
             <div className="Foot_menu-in flex">
+              <p className="Foot_tit">Menu</p>
               <Menu />
+            </div>
+            <div className="Foot_txt">
+              <ul className="Foot_txt_ul">
+                <li>
+                  Shipping Information:
+                  "Learn more about our shipping policies and delivery times. We offer worldwide shipping with tracking on all orders."
+                </li>
+                <li>
+                  Return Policy:
+                  "Not satisfied with your purchase? Check out our hassle-free return policy for details on how to initiate a return or exchange."
+                </li>
+                <li>
+                  Secure Payments:
+                  "Shop with confidence! We use encrypted SSL technology to ensure that your payment information is always secure."
+                </li>
+                <li>
+                  Secure Payments:
+                  "Shop with confidence! We use encrypted SSL technology to ensure that your payment information is always secure."
+                </li>
+              </ul>
             </div>
           </div>
           <div className="Foot_links-wrap">

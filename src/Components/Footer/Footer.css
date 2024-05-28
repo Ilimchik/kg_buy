@@ -45,3 +45,11 @@ footer {
   font-size: 12px;
   opacity: 0.85;
 }
+.Foot_txt_ul{
+  margin-top: 15px;
+  font-size: 11px;
+  color: white;
+}
+.Foot_txt_ul li{
+  margin-bottom: 15px;
+}
