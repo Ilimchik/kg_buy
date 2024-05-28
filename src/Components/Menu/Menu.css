@@ -40,3 +40,27 @@ footer .Menu li {
     margin: 15px auto;
   }
 }
+
+@media screen and (max-width: 1300px) {
+  .Foot_menu {
+    width: calc(100% - 180px);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .Foot_menu {
+    width: calc(100% - 130px);
+  }
+}
+
+@media screen and (max-width: 780px) {
+ 
+}
+
+@media screen and (max-width: 540px) {
+  
+}
+
+@media screen and (max-width: 450px) {
+ 
+}

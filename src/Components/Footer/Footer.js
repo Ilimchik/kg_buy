@@ -56,7 +56,7 @@ function Footer() {
             More ways to shop: Find an our real Store or other retailer near you.
             We don't have real store :(
           </p>
-          <p>Copyright © 2024 Ilim Inc. All rights reserved.</p>
+          <p className="footerCopyright">Copyright © 2024 Ilim Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>

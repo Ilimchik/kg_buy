@@ -25,6 +25,7 @@ footer {
 
 .Foot_links-wrap {
   width: 100px;
+  margin: 0 auto;
 }
 
 .Foot_link {
@@ -45,11 +46,37 @@ footer {
   font-size: 12px;
   opacity: 0.85;
 }
-.Foot_txt_ul{
+
+.Foot_txt_ul {
   margin-top: 15px;
   font-size: 11px;
   color: white;
 }
-.Foot_txt_ul li{
-  margin-bottom: 15px;
+
+.Foot_txt_ul li {
+  margin-bottom: 10px;
+}
+.footerCopyright{
+  opacity: 0.3;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  
+}
+
+@media screen and (max-width: 990px) {
+  
+}
+
+@media screen and (max-width: 780px) {
+ 
+}
+
+@media screen and (max-width: 540px) {
+  
+}
+
+@media screen and (max-width: 450px) {
+ 
 }
