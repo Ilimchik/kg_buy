@@ -5,16 +5,16 @@ function Menu() {
   return (
     <nav className='Menu'>
       <ul className='MenuContent flex'>
-        <li className='active'>
+        <li >
           <Link to="/">Home</Link>
         </li>
-        <li className='active'>
+        <li>
           <Link to="/about">About</Link>
         </li>
-        <li className='active'>
+        <li>
           <Link to="/delivery">Delivery</Link>
         </li>
-        <li className='active'>
+        <li>
           <Link to="/contacts">Contacts</Link>
         </li>
       </ul>

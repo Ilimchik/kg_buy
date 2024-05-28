@@ -62,5 +62,7 @@ footer .Menu li {
 }
 
 @media screen and (max-width: 450px) {
- 
+ .Menu{
+  display: none;
+ }
 }
