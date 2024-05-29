@@ -6,3 +6,14 @@
   font-weight: 600;
   margin: 5vh 0;
 }
+
+@media screen and (max-width: 540px) {
+  .sec_tit{
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sec_tit{
+    margin-top: 10px;
+  }
+}
