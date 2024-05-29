@@ -6,7 +6,7 @@
   max-height: 30px;
   white-space: nowrap;
   box-sizing: border-box;
-  margin-top: 10px;
+  margin-top: auto;
 }
 
 .Search input {

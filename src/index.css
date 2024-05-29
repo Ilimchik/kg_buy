@@ -112,3 +112,10 @@ main{
 main{
 	min-height: 300px;
   }
+
+@media screen and (max-width: 780px) {
+	.main{
+		padding-left: 0;
+		width: 100%;
+	}
+}
