@@ -3,12 +3,13 @@
 }
 
 .DelCard {
-    width: 350px;
+    width: 270px;
     border-radius: 1px;
     border: solid rgb(146, 146, 146);
     overflow: hidden;
     height: 450px;
     cursor: pointer;
+    margin: 20px 10px;
 }
 
 .DelImg {
@@ -18,4 +19,9 @@
 
 .DelTxt {
     padding: 15px;
+}
+@media screen and (max-width: 780px) {
+	.DelCard {
+        margin: 20px auto;
+    }
 }
