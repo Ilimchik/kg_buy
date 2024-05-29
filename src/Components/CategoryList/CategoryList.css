@@ -18,16 +18,35 @@
     padding: 3px 10px;
     transition: 0.3s;
 }
+
 .CategoryList ul {
     display: flex;
     justify-content: space-around;
     font-size: 20px;
+
 }
 
 .CategoryList a:hover {
-  scale: 1.1;
+    scale: 1.1;
 }
 
-.dropdownBtn {
-    padding-bottom: 5px;
+@media screen and (max-width: 1300px) {}
+
+@media screen and (max-width: 990px) {}
+
+@media screen and (max-width: 780px) {
+    .CategoryList ul {
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+
+    .CategoryList {
+        right: 0;
+        
+    }
 }
+
+@media screen and (max-width: 540px) {}
+
+@media screen and (max-width: 450px) {}
