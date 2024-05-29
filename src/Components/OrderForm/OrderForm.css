@@ -46,3 +46,7 @@
   display: block;
   text-align: center;
 }
+.submit{
+  border-radius: 5px;
+  border: solid rgb(135, 134, 134);
+}
