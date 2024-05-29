@@ -1,32 +1,21 @@
-import './Burger.css'
-import { Link } from 'react-router-dom'
+// import { slide as Menu } from 'react-burger-menu'
 
-export default function Burger() {
-
-
-    return (
-        <div className="burger">
-            <input type="checkbox" id="menu-toggle" checked />
-            <label for="menu-toggle"></label>
-            <ul id="menu">
-                <nav className='MenuBurger'>
-                    <ul className='MenuContent'>
-                        <li >
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li>
-                            <Link to="/delivery">Delivery</Link>
-                        </li>
-                        <li>
-                            <Link to="/contacts">Contacts</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </ul>
-        </div>
-    )
-
-}
+// class Example extends React.Component {
+//     showSettings(event) {
+//         event.preventDefault();
+    
+    
+    
+//     }
+//     render() {
+    
+//         return (
+//             <Menu>
+//                 <a id="home" className="menu-item" href="/">Home</a>
+//                 <a id="about" className="menu-item" href="/about">About</a>
+//                 <a id="contact" className="menu-item" href="/contact">Contact</a>
+//                 <a onClick={this.showSettings} className="menu-item--small" href="">Settings</a>
+//             </Menu>
+//         );
+//     }
+// }
