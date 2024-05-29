@@ -41,7 +41,9 @@ header {
   right: -5px;
   border-radius: 50%;
 }
-
+.NavToggle{
+  display: none;
+}
 @media screen and (max-width: 1300px) {
   .buttons {
     margin-left: auto;
@@ -76,6 +78,4 @@ header {
   }
 }
 
-@media screen and (max-width: 450px) {
-  
-}
+
